@@ -1,5 +1,5 @@
 % -----------------------------------------
-% Minimal working example for Javier ORTIZ
+% Minimal working example
 % by Guillaume COSTESEQUE - August 2017
 %
 % Simulate traffic densities on a simple
