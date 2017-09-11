@@ -1,5 +1,5 @@
 % ------------------------------------
-% Minimal working example for Javier ORTIZ
+% Minimal working example
 % by Guillaume COSTESEQUE - July 2017
 % ------------------------------------
 clear allvariables
