@@ -2,7 +2,7 @@ function [rho,Delta_t]=Godunov(geometry,rho_0,...
     Demand_upstream,Supply_downstream,...
     Delta_x,T)
 % =========================================================================
-% This function aims is to solve the LWR model (1D scalar conservation law) 
+% This function aims to solve the LWR model (1D scalar conservation law) 
 % thanks to the Godunov scheme (1D finite volume scheme)
 % -------------------------------------------------------------------------
 % Inputs:
@@ -116,7 +116,13 @@ end
 
 clear X
 
-% Plotting (could be a different script function)
+%{
+% Plotting 
+% -----------------------------------------
+% --> could be a different script function:
+% plot_density(L,T,Delta_x,Delta_t,rho)
+% -----------------------------------------
+
 figure
 [X,Y]=meshgrid(0:Delta_t:T,Delta_x/2:Delta_x:L-Delta_x/2);
 surf(X,Y,rho','EdgeColor','none');
@@ -126,3 +132,4 @@ c = colorbar('Limits',[0 max(max(rho))]) ;
 c.Label.String = 'Density (veh/km)'; % OPTIONNAL
 xlabel('Time (hr)','Fontsize',14)
 ylabel('Space (km)','Fontsize',14)
+%}
