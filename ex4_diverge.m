@@ -1,5 +1,5 @@
 % -----------------------------------------
-% Minimal working example for Javier ORTIZ
+% Minimal working example
 % by Guillaume COSTESEQUE - September 2017
 % 
 % Comparison between two FIFO and non-FIFO
